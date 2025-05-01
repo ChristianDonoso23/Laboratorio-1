@@ -5,3 +5,8 @@
     text-align: center;
     padding: 1rem 0;
 }
+.pie-pagina a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
