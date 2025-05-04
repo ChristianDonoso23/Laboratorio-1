@@ -89,6 +89,7 @@ p {
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 /*Tarjetas de productos*/
@@ -178,10 +179,19 @@ p {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
 /* Ajustes para pantallas medianas */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .productos {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -189,5 +199,6 @@ p {
 @media (max-width: 480px) {
   .productos {
     grid-template-columns: 1fr;
+    padding: 1rem;
   }
 }
