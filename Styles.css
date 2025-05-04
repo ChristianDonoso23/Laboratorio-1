@@ -1,4 +1,6 @@
+/*Variables globales de color*/
 :root{
+  /* Colores claros */
   --color-primary: #3a7bd5;
   --color-secondary: #00d2ff;
   --color-accent: #ff6b6b;
@@ -8,6 +10,7 @@
   --color-card-bg: #f9f9f9;
   --color-footer: #f1f1f1;
 
+  /* Colores oscuros */
   --color-primary-dark: #2a5cad;
   --color-secondary-dark: #0099cc;
   --color-accent-dark: #e64c4c;
@@ -19,6 +22,7 @@
 
 }
 
+/* Estilos generales */
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--color-text);
@@ -29,6 +33,7 @@ body{
   min-height: 100vh;
 }
 
+/*Tipografía General*/
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: 600;
@@ -55,6 +60,7 @@ p {
   font-weight: 400;
 }
 
+
 .encabezado {
   display: flex;
   align-items: center;
@@ -74,6 +80,7 @@ p {
   font-family: Arial, sans-serif;
 }
 
+/*Grid de productos*/
 .productos {
   grid-area: productos;
   display: grid;
@@ -84,6 +91,7 @@ p {
   margin: 0 auto;
 }
 
+/*Tarjetas de productos*/
 .card {
   background-color: var(--color-card-bg);
   border-radius: 8px;
@@ -139,6 +147,7 @@ p {
   padding: 0 1rem;
 }
 
+/*Botón de compra*/
 .btn-comprar {
   background-color: var(--color-accent);
   color: white;
@@ -161,18 +170,22 @@ p {
   transform: scale(1.05);
 }
 
+/*Media Queries*/
+/* Ajustes para pantallas más grandes */
 @media (min-width: 1024px) {
   .productos {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
 }
 
+/* Ajustes para pantallas medianas */
 @media (max-width: 768px) {
   .productos {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
   .productos {
     grid-template-columns: 1fr;
