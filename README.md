@@ -40,11 +40,10 @@ El objetivo principal del laboratorio fue **maquetar y diseñar la interfaz CSS*
 ## 📂 Estructura del Proyecto
 
 ```
-📁 mercado-localonline/
+📁 laboratorio-1/
 ├── index.html
-├── css/
-│   ├── reset.css
-│   └── styles.css
+├── reset.css
+├──styles.css
 ├── img/ (imágenes de productos y logotipo)
 └── README.md
 ```
