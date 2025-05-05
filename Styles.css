@@ -9,6 +9,9 @@
   --color-background: #ffffff;
   --color-card-bg: #f9f9f9;
   --color-footer: #f1f1f1;
+  --color-footer-copy: #999999; 
+  --color-footer-link: #afbfd6;
+  --color-footer-link-hover: #ff6b6b;
 
   /* Colores oscuros */
   --color-primary-dark: #2a5cad;
@@ -18,7 +21,7 @@
   --color-text-light-dark: #cccccc;
   --color-background-dark: #121212;
   --color-card-bg-dark: #1e1e1e;
-  --color-footer-dark: #242424
+  --color-footer-dark: #242424;
 
 }
 
@@ -170,6 +173,74 @@ p {
 .btn-comprar:active {
   transform: scale(1.05);
 }
+
+/*Footer Estilos*/
+.footer {
+  grid-area: footer;
+  text-align:left ;
+  padding: 20px;
+  background-color: var(--color-footer-dark);
+  color: var(--color-text-dark);
+  font-size: 0.9rem;
+  position: relative;
+}
+/*Footer Contenedor Estilos*/
+.footer-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-redes-sociales, .footer-contacto {
+  flex: 1 1 500px;
+  margin-bottom: 1rem;
+}
+
+.footer-redes-sociales h3, .footer-contacto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-dark);
+}
+.footer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    transition: transform 0.3s;
+  }
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: var(--color-footer-link);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover img {
+  transform: scale(1.2);
+}
+.footer a:hover {
+  color: var(--color-footer-link-hover);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--color-footer-copy);
+}
+
 
 /*Media Queries*/
 /* Ajustes para pantallas más grandes */
