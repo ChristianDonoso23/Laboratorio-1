@@ -45,8 +45,7 @@ El objetivo principal del laboratorio fue **maquetar y diseñar la interfaz CSS*
 ├── css/
 │   ├── reset.css
 │   └── styles.css
-├── assets/
-│   └── img/ (imágenes de productos y logotipo)
+├── img/ (imágenes de productos y logotipo)
 └── README.md
 ```
 
