@@ -70,31 +70,88 @@ p {
   padding: 0 1rem;
 }
 
+/*Encabezado Estilos*/
 .encabezado {
+  display: grid;
+  grid-template-areas: "logo menu";
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--color-primary);
+}
+
+/* Logotipo */
+.logo {
   display: flex;
   align-items: center;
-  background-color: white;
-  padding: 15px 30px;
-  border: 1px solid black;
+  gap: 1rem;
 }
 
-.encabezado img {
-  width: 100px;
-  margin-right: 20px;
+.logo img {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.encabezado h1 {
+.logo h1 {
+  font-size: 1.5rem;
+  color: white;
   margin: 0;
-  font-size: 1.5em;
-  font-family: Arial, sans-serif;
+}
+
+.logo h1:hover {
+  cursor: pointer;
+}
+
+/* Menu de navegación */
+.menu_navegacion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu_navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu_navegacion li {
+  display: flex;
+  align-items: center;
+}
+
+.menu_navegacion a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.menu_navegacion a:hover,
+.menu_navegacion a:focus {
+  background-color: white;
+  color: #ff5e62; 
+}
+
+.menu_navegacion img {
+  width: 40px;  
+  height: 40px; 
 }
 
 /*Sección Hero*/
 .hero {
   grid-area: hero;
-  background:#8771e6;
+  background:#fbfaff;
   padding: 1.5rem 0;
   text-align: center;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .hero h2 {
