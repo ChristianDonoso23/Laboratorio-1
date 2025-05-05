@@ -263,10 +263,10 @@ p {
 .footer {
   grid-area: footer;
   text-align:left ;
-  padding: 20px;
+  padding: 12px;
   background-color: var(--color-footer-dark);
   color: var(--color-text-dark);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   position: relative;
 }
 /*Footer Contenedor Estilos*/
@@ -277,22 +277,23 @@ p {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 0.5rem;
 }
 
 .footer-redes-sociales, .footer-contacto {
-  flex: 1 1 500px;
-  margin-bottom: 1rem;
+  flex: 1 1 300px;
+  margin-bottom: 0.5rem;
 }
 
 .footer-redes-sociales h3, .footer-contacto h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
   color: var(--color-text-dark);
 }
 .footer img{
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+    margin-right: 0.3rem;
     transition: transform 0.3s;
   }
 .footer ul {
@@ -301,7 +302,10 @@ p {
 }
 
 .footer ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .footer a {
@@ -321,8 +325,8 @@ p {
 
 .footer-copy {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 0.8rem;
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
   color: var(--color-footer-copy);
 }
 
@@ -395,6 +399,29 @@ p {
     width: 24px;
     height: 24px;
   }
+
+  .footer {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  
+  .footer-contenedor {
+    gap: 0.3rem;
+  }
+  
+  .footer-redes-sociales, .footer-contacto {
+    flex: 1 1 100%; /* Ocupa todo el ancho en móviles */
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer-redes-sociales h3, .footer-contacto h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .footer-copy {
+    margin-top: 0.5rem;
+  }
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -434,6 +461,24 @@ p {
   .menu_navegacion img {
     width: 18px;
     height: 18px;
+  }
+
+  .footer {
+    padding: 8px;
+  }
+  
+  .footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  /* Opcional: Mostrar iconos de redes sociales en línea para ahorrar espacio */
+  .footer-redes-sociales ul {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
   }
 }
 
