@@ -436,3 +436,33 @@ p {
     height: 18px;
   }
 }
+
+/* Ajustes específicos para pantallas muy estrechas */
+@media (max-width: 360px) {
+  .encabezado {
+    padding: 0.4rem 0.2rem;
+  }
+  
+  .logo img {
+    width: 25px;
+  }
+  
+  .logo h1 {
+    font-size: 0.6rem;
+  }
+  
+  .menu_navegacion a {
+    font-size: 0.6rem;
+    padding: 0.15rem;
+    gap: 0.15rem;
+  }
+  
+  .menu_navegacion img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .menu_navegacion ul {
+    gap: 0.15rem;
+  }
+}
