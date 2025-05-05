@@ -3,9 +3,9 @@
 **Materia:** Aplicación de Tencnologías Web 
 **Actividad:** Diseño y Maquetación de una Plataforma E-commerce  
 **Integrantes del grupo:**  
-- [Mateo Chanataxi]  
-- [Christian Donoso]  
-- [Mauri Tandazo]  
+- Mateo Chanataxi  
+- Christian Donoso 
+- Mauri Tandazo
 
 ## 📌 Descripción del Proyecto
 
