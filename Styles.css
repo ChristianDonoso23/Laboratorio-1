@@ -269,6 +269,7 @@ p {
   font-size: 0.85rem;
   position: relative;
 }
+
 /*Footer Contenedor Estilos*/
 .footer-contenedor {
   display: flex;
@@ -290,12 +291,14 @@ p {
   margin-bottom: 0.3rem;
   color: var(--color-text-dark);
 }
+
 .footer img{
-    width: 16px;
-    height: 16px;
-    margin-right: 0.3rem;
-    transition: transform 0.3s;
-  }
+  width: 16px;
+  height: 16px;
+  margin-right: 0.3rem;
+  transition: transform 0.3s;
+}
+
 .footer ul {
   list-style: none;
   padding: 0;
@@ -319,6 +322,7 @@ p {
 .footer a:hover img {
   transform: scale(1.2);
 }
+
 .footer a:hover {
   color: var(--color-footer-link-hover);
 }
@@ -346,6 +350,7 @@ p {
     padding: 1.5rem;
   }
 }
+
 /* Ajustes para pantallas medianas */
 @media (max-width: 767px) {
   .productos {
@@ -410,7 +415,7 @@ p {
   }
   
   .footer-redes-sociales, .footer-contacto {
-    flex: 1 1 100%; /* Ocupa todo el ancho en móviles */
+    flex: 1 1 100%;
     margin-bottom: 0.3rem;
   }
   
@@ -474,7 +479,6 @@ p {
     width: 100%;
   }
   
-  /* Opcional: Mostrar iconos de redes sociales en línea para ahorrar espacio */
   .footer-redes-sociales ul {
     display: flex;
     gap: 0.8rem;
